@@ -5,22 +5,19 @@
 
 
 install : 
-1) создать файл index.js
-c содержанием
+1) создать файл index.js c содержанием <br>
+
+'use strict'; <br>
+var MPWidgetLib = require('./../lib/MPWidgetLib'); <br>
+window.MPWidgetLib =MPWidgetLib ; <br>
 
 
-'use strict';
-var MPWidgetLib = require('./../lib/MPWidgetLib');
-window.MPWidgetLib =MPWidgetLib ;
+2) на странице вебмастера разместить вызов библиотеки <br>
 
-
-2) на странице вебмастера разместить вызов библиотеки
-
-
-MPWidgetLib.create(id,cssSelector,domainSourse,wid,css_);
-id : - имя шаблона (table.xsl)
-cssSelector : селектор  контейнеров, где создаётся виджет
-domainSourse:  домен на котором будут расположены api сервисы
-wid_ : - врутренний идентификатор клиента
-css_ :  опционально - селектор где расположен контекстной
+MPWidgetLib.create(id,cssSelector,domainSourse,wid,css_); <br>
+id : - имя шаблона (table.xsl) <br>
+cssSelector : селектор  контейнеров, где создаётся виджет <br>
+domainSourse:  домен на котором будут расположены api сервисы <br>
+wid_ : - врутренний идентификатор клиента <br>
+css_ :  опционально - селектор где расположен контекстной <br>
 
